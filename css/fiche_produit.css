@@ -1,0 +1,159 @@
+/*_____________________
+
+CSS de la fiche produit
+_______________________*/
+/* Les polices */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#header_burger{
+    display: none;
+}
+#header_burger svg{
+    stroke: #222;
+    width: 22px;
+    height: 22px;
+
+    }
+#fiche_produit{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+#fiche_produit #bloc_droite{
+    position: relative;
+}
+#bloc_droite h1, #bloc_droite h2, #bloc_droite h3{
+    font-family: 'Roboto', sans-serif;
+}
+#bloc_droite h1{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#bloc_droite h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: left;
+}
+#bloc_droite h3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: right;
+}
+#bloc_droite p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
+}
+#bloc_droite #galerie{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+#bloc_droite #liens_sociaux{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+#bloc_droite #liens_sociaux img{
+    width: 50px;
+}
+#bloc_droite #bouton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bloc_droite #bouton a{
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+    padding: 20px 40px;
+}
+
+/* Pour les écrans jusqu'à 768px de largeur */
+@media screen and (max-width: 768px) {
+    header nav{
+      display: none;
+    }
+
+    #header_burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #bloc_gauche{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1,h2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h3{
+        margin-right: 35px;
+    }
+    p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #galerie{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #liens_sociaux{
+        display: flex;        
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    #bouton{
+        display: flex;
+        margin-left: 2px;
+        margin-right: 4px;
+        
+    }
+   
+    #fiche_produit {
+        flex-direction: column; /* Affiche les éléments en colonne */
+    }
+    #fiche_produit #bloc_droite {
+        margin-right: 0; /* Supprime la marge */
+        margin-bottom: 20px; /* Ajoute une marge inférieure pour la séparation */
+    }
+  
+    #produits {
+        width: 80%;
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centrer horizontalement les éléments */
+        align-items: center; /* Centrer verticalement les éléments */
+        margin-bottom: 50px;
+      }
+      
+      #produits article {
+        width: 350px;
+        height: 460px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        margin: 20px 0;
+        border: solid 1px #ccc;
+      }
+      
+
+}

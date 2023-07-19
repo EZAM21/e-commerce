@@ -1,0 +1,48 @@
+/*_______________
+
+CSS du carousssel
+_________________*/
+
+#carouselExampleCaptions{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+img{
+    cursor: pointer;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    #carouselExampleCaptions {
+        max-width:600px;
+        height: auto;
+    }
+
+    #carouselExampleCaptions img{
+        width: 100%;
+        height: auto;
+
+    }
+    #miniatures ul li a img {
+        width: 162px;
+        height: auto;
+}
+
+}
+

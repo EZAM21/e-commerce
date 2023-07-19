@@ -1,0 +1,187 @@
+/*_______________________
+
+CSS de la page d'accueil
+_________________________*/
+
+/* Les polices */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;
+}
+
+#conteneur{
+    margin: 0;
+}
+
+/* Début header */
+header{
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+header nav ul li{
+    padding: 10px 20px;
+    transition: 1s;
+}
+header nav ul li:hover{
+    background-color: #111;
+    cursor: pointer;
+    transition: 1s;
+}
+header nav ul li:hover a{
+    color: #fff;
+}
+header nav ul li.icone:hover{
+    color: #fff;
+}
+header nav ul li a{
+    font-weight: 300;
+    color: #222;
+    text-decoration: none;
+}
+
+#header_burger{
+    display: none;
+}
+#header_burger svg{
+    stroke: #222;
+    width: 22px;
+    height: 22px;
+
+
+}
+/* Fin du header*/
+
+#titre{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Début section produits */
+#produits{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#produits article{
+    width: 350px;
+    height: 460px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    text-align: center;
+    margin: 20px 0;
+    border: solid 1px #ccc;
+}
+#produits article h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+#produits article h1{
+    margin: 40px 0 20px 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+}
+#produits article h2{
+    margin: 20px 0 20px 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
+}
+#produits article h3{
+    margin: 20px 20px 20px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 50px;
+}
+#produits article img{
+    height: 200px;
+}
+#produits article a{
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    transition: 1s;
+    padding: 10px 40px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+#produits article a:hover{
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/* Fin section produits */
+
+
+/* Début footer */
+footer{
+    background-color: #111;
+    font-size: 1rem;
+    font-weight: 400;
+}
+footer nav ul{
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+}
+/* Fin footer */
+
+/* Pour les écrans jusqu'à 768px de largeur */
+@media screen and (max-width: 768px) {
+    header nav{
+      display: none;
+    }
+
+    #header_burger{
+        display: block;
+        cursor: pointer;
+    }
+    
+    #produits {
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #produits article {
+      width: 100%;
+      margin: 20px 0;
+    }
+    footer nav ul {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      footer nav ul li {
+        margin-bottom: 10px;
+      }
+    }
+
+    
+   
